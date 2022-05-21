@@ -23,6 +23,7 @@ public class DataBaseConnection {
                     "    other bigint NOT NULL,\n" +
                     "    solar bigint NOT NULL,\n" +
                     "    wind bigint NOT NULL,\n" +
+                    "    nuclear bigint NOT NULL,\n" +
                     "    CONSTRAINT energy_pkey PRIMARY KEY (id)\n" +
                     ")\n" +
                     "\n" +
@@ -87,9 +88,9 @@ public class DataBaseConnection {
             String sql = "";
 
             for (Energy el : listOfEnergy){
-                sql = "INSERT INTO public.energy (country, date_time,coal,gas,oil,hydro,solar,wind,other) "+
+                sql = "INSERT INTO public.energy (country, date_time,coal,gas,oil,hydro,solar,wind,other,nuclear) "+
                         "VALUES ('"+el.getCountry()+"','"+el.getDateTime()+"',"+el.getCoal()+","+el.getGas()+
-                        ","+el.getOil()+","+el.getHydro()+","+el.getSolar()+","+el.getWind()+","+el.getOther()+")";
+                        ","+el.getOil()+","+el.getHydro()+","+el.getSolar()+","+el.getWind()+","+el.getOther()+","+el.getNuclear()+")";
                 stmt.executeUpdate(sql);
             }
 //            𓁹‿𓁹

@@ -12,6 +12,8 @@ public class Energy {
   private long solar;
   private long wind;
 
+  private long nuclear;
+
   public Energy(){
     this.coal = 0;
     this.gas = 0;
@@ -20,9 +22,10 @@ public class Energy {
     this.wind = 0;
     this.solar = 0;
     this.hydro = 0;
+    this.nuclear =0;
   }
 
-  public Energy( String country, Timestamp dateTime,long coal, long gas, long oil, long hydro, long solar, long wind, long other) {
+  public Energy( String country, Timestamp dateTime,long coal, long gas, long oil, long hydro, long solar, long wind, long other,long nuclear) {
     this.coal = coal;
     this.country = country;
     this.dateTime = dateTime;
@@ -32,8 +35,12 @@ public class Energy {
     this.other = other;
     this.solar = solar;
     this.wind = wind;
+    this.nuclear = nuclear;
   }
 
+  public long getNuclear(){return nuclear;}
+
+  public void setNuclear(long nuclear){this.nuclear=nuclear;}
   public long getCoal() {
     return coal;
   }

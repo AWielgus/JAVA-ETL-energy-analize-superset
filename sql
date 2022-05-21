@@ -21,6 +21,28 @@ ALTER TABLE public.energy
 
 
 
-"Area","MTU","Biomass  - Actual Aggregated [MW]","Fossil Brown coal/Lignite  - Actual Aggregated [MW]","Fossil Coal-derived gas  - Actual Aggregated [MW]","Fossil Gas  - Actual Aggregated [MW]","Fossil Hard coal  - Actual Aggregated [MW]","Fossil Oil  - Actual Aggregated [MW]","Fossil Oil shale  - Actual Aggregated [MW]","Fossil Peat  - Actual Aggregated [MW]","Geothermal  - Actual Aggregated [MW]","Hydro Pumped Storage  - Actual Aggregated [MW]","Hydro Pumped Storage  - Actual Consumption [MW]","Hydro Run-of-river and poundage  - Actual Aggregated [MW]","Hydro Water Reservoir  - Actual Aggregated [MW]","Marine  - Actual Aggregated [MW]","Nuclear  - Actual Aggregated [MW]","Other  - Actual Aggregated [MW]","Other renewable  - Actual Aggregated [MW]","Solar  - Actual Aggregated [MW]","Waste  - Actual Aggregated [MW]","Wind Offshore  - Actual Aggregated [MW]","Wind Onshore  - Actual Aggregated [MW]"
+0"Area",0
+1"MTU",1
+2"Biomass  - Actual Aggregated [MW]",other
+3"Fossil Brown coal/Lignite  - Actual Aggregated [MW]",coal
+4"Fossil Coal-derived gas  - Actual Aggregated [MW]",gas
+5"Fossil Gas  - Actual Aggregated [MW]",gas
+6"Fossil Hard coal  - Actual Aggregated [MW]",coal
+7"Fossil Oil  - Actual Aggregated [MW]",oil
+8"Fossil Oil shale  - Actual Aggregated [MW]",oil
+9"Fossil Peat  - Actual Aggregated [MW]",coal
+10"Geothermal  - Actual Aggregated [MW]",other
+11"Hydro Pumped Storage  - Actual Aggregated [MW]",
+12"Hydro Pumped Storage  - Actual Consumption [MW]",
+13"Hydro Run-of-river and poundage  - Actual Aggregated [MW]",hydro
+14"Hydro Water Reservoir  - Actual Aggregated [MW]",hydro
+15"Marine  - Actual Aggregated [MW]",hydro
+16"Nuclear  - Actual Aggregated [MW]",nuclear
+17"Other  - Actual Aggregated [MW]",other
+18"Other renewable  - Actual Aggregated [MW]",other
+19"Solar  - Actual Aggregated [MW]",solar
+20"Waste  - Actual Aggregated [MW]",other
+21"Wind Offshore  - Actual Aggregated [MW]",wind
+22"Wind Onshore  - Actual Aggregated [MW]"wind
 
 
