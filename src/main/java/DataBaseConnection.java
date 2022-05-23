@@ -41,18 +41,13 @@ public class DataBaseConnection {
     }
 
     public void DropDB() {
-
         try {
             con = DriverManager.getConnection(driverURL);
-
             stmt = con.createStatement();
-
             String sql = "Drop table if exists public.energy";
-
             stmt.executeUpdate(sql);
             stmt.close();
             con.close();
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
