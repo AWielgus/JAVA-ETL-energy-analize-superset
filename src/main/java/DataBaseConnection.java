@@ -4,7 +4,7 @@ import java.util.List;
 public class DataBaseConnection {
     private Connection con;
     private Statement stmt;
-    private static final String driverURL= "jdbc:postgresql://localhost:5432/Energy?user=admin&password=admin";
+    private static final String driverURL= "jdbc:postgresql://localhost:5431/energy?user=postgres&password=admin";
     public void CreateDB() {
 
         try {
@@ -25,18 +25,13 @@ public class DataBaseConnection {
                     "    wind bigint NOT NULL,\n" +
                     "    nuclear bigint NOT NULL,\n" +
                     "    CONSTRAINT energy_pkey PRIMARY KEY (id)\n" +
-                    ")\n" +
-                    "\n" +
-                    "TABLESPACE pg_default;\n" +
-                    "\n" +
-                    "ALTER TABLE public.energy\n" +
-                    "    OWNER to admin;";
+                    ")\n";
             stmt.executeUpdate(sql);
             stmt.close();
             con.close();
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            System.err.println( e.getClass().getName()+" :: "+ e.getMessage() );
         }
     }
 
@@ -49,7 +44,7 @@ public class DataBaseConnection {
             stmt.close();
             con.close();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            System.err.println( e.getClass().getName()+" :: "+ e.getMessage() );
         }
     }
 
@@ -68,7 +63,7 @@ public class DataBaseConnection {
             con.close();
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            System.err.println( e.getClass().getName()+" :: "+ e.getMessage() );
         }
         return ret;
     }
